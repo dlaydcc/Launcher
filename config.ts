@@ -17,3 +17,19 @@ export const api = {
 };
 
 export const appPath = '.aurora-launcher';
+
+export const discordRPC = {
+  appId: "1229457627684278293",
+  firstLineText: "Тестирую лаунчер",
+  secondLineText: "Баращка сбежала",
+  buttons: [
+    {
+      label: "Видео секрет",
+      url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+    },
+  ],
+  largeImageKey: "logo",
+  smallImageKey: "logo_mc",
+  largeImageText: "ConflictZone Launcher",
+  smallImageText: "Minecraft",
+};
