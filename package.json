@@ -3,7 +3,7 @@
     "version": "0.0.4",
     "description": "Launcher for Minecraft",
     "main": "build/main/index.js",
-    "private": true,
+    "private": false,
     "scripts": {
         "dev": "concurrently -i -n electron,main,preload,renderer -c cyan.bold,blue.bold,yellow.bold,magenta.bold \"npm:start:dev\" \"npm:build:main -- --watch --sourcemap=inline\" \"npm:build:preload -- --watch --sourcemap=inline\" \"vite\"",
         "build": "concurrently -n main,preload,renderer -c blue.bold,yellow.bold,magenta.bold \"npm:build:main\" \"npm:build:preload\" \"npm:build:renderer\" --kill-others-on-fail",
@@ -24,17 +24,17 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AuroraTeam/Launcher.git"
+        "url": "git+https://github.com/dlaydcc/Launcher.git"
     },
-    "author": "AuroraTeam",
+    "author": "dlaydcc",
     "contributors": [
-        "JoCat (https://github.com/JoCat)"
+        ""
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/AuroraTeam/Launcher/issues"
+        "url": "https://github.com/dlaydcc/Launcher/issues"
     },
-    "homepage": "https://github.com/AuroraTeam/Launcher#readme",
+    "homepage": "https://github.com/dlaydcc/Launcher#readme",
     "devDependencies": {
         "@aurora-launcher/esbuild-decorators": "^0.0.1",
         "@types/node": "^18.17.15",
@@ -88,13 +88,13 @@
         }
     },
     "build": {
-        "appId": "ru.aurora.launcher",
-        "productName": "Aurora Launcher",
+        "appId": "4e021c66-46c3-459f-b551-67c888c1543e",
+        "productName": "Conflict Zone",
         "publish": [
             {
                 "provider": "github",
                 "releaseType": "release",
-                "owner": "AuroraTeam",
+                "owner": "dlaydcc",
                 "repo": "Launcher"
             }
         ],
@@ -118,7 +118,7 @@
                 "AppImage"
             ],
             "category": "Game",
-            "maintainer": "AuroraTeam <null@aurora-team.ru>"
+            "maintainer": "dlaydcc"
         }
     },
     "optionalDependencies": {
